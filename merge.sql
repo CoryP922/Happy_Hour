@@ -30,18 +30,19 @@ SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
 FROM Orders
 INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
 
-
+create view happy_hour as
 SELECT happiness."Country"
 from happiness
 inner join alcohol on alcohol."Country" = happiness."Country";
 
+/*conducted left and right joins to see what countries were missing. 
 SELECT happiness."Country", happiness."Happiness", happiness."Happiness Score", happiness."Economy (GDP per Capita)", alcohol."2016" 
 from happiness
 inner join alcohol on alcohol."Country" = happiness."Country";
 
 SELECT happiness."Country", happiness."Happiness", happiness."Happiness Score", happiness."Economy (GDP per Capita)", alcohol."2016", alcohol."Country" 
 from happiness
-left join alcohol on alcohol."Country" = happiness."Country";
+left join alcohol on alcohol."Country" = happiness."Country";*/
 
 
 SELECT happiness."Country", happiness."Happiness", happiness."Happiness Score", happiness."Economy (GDP per Capita)", alcohol."2016", alcohol."Country"
