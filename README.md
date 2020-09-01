@@ -15,7 +15,7 @@ We initially had to create our database three times as it kept getting corrupted
 
 --Data Queries included:
 
-Merge of Alcohol consumption and Happiness data from 2016
-Inner Join of countries to show matches 
-Left and Right Joins to illustrate null or no matches 
+Merge of Alcohol consumption and Happiness data from 2016.
+Inner Join of countries to show matches. 
+Left and Right Joins to illustrate null or no matches. 
 
